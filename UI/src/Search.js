@@ -12,9 +12,6 @@ class Search extends Component {
   }
 
   sendCityData(suggestion) {
-    console.log('hi');
-    debugger;
-      console.log(suggestion)
     return axios({
         method: "post",
         url: "http://localhost:8000/getWeatherData",
