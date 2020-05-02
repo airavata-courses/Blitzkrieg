@@ -6,7 +6,7 @@ runConsumer: function() {
   try{
     var kafka = require('kafka-node'),
     Consumer = kafka.Consumer,
-    client = new kafka.KafkaClient(),
+    client = new kafka.KafkaClient({kafkaHost: 'kafka1:9092'}),
     consumer = new Consumer(
         client,
         [
